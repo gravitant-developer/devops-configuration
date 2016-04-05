@@ -1,0 +1,21 @@
+zuul:
+  routes:
+    accounts:
+      path: /accounts/**
+      service-id: account
+      strip-prefix: false
+    providers:
+      path: /providers/**
+      service-id: provider
+      strip-prefix: false
+    tags:
+      path: /tags/**
+      service-id: tag
+      strip-prefix: false
+    usage:
+      path: /usage/**
+      service-id: usage
+      strip-prefix: false
+ribbon:
+   eureka:
+    enabled: true

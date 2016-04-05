@@ -1,0 +1,9 @@
+management:
+  context-path: /admin
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
