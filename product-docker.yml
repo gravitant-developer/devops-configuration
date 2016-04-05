@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+      naming_strategy: org.hibernate.cfg.EJB3NamingStrategy
+  datasource:
+    url: jdbc:mysql://productdb:3306/gravitant_db_product
+    driver-class-name:  com.mysql.jdbc.Driver
+    test-on-borrow: true
+    validation-query: Select 1
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl: 
+      defaultZone: http://discovery:8761/eureka/
